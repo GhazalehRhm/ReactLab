@@ -1,0 +1,70 @@
+
+@font-face {
+  font-family: 'Samim';
+  src: url(../../fonts/Samim.ttf);
+}
+@font-face {
+  font-family: 'Samim-FD';
+  src: url(../../fonts/Samim-FD.ttf);
+}
+
+body{
+  font-family: Samim;
+}
+.container{
+    width: 300px;
+    margin: auto;
+    padding: 2rem;
+}
+  .specialSale{
+ 
+   text-align: end;
+   color: red;
+}
+.title{
+  font-family: Samim-FD;
+  text-align: right;
+  color: rgb(34, 34, 34);  
+  
+}
+.rate{
+font-family: Samim-FD;
+  text-align: start;
+}
+.isFreeShipping{
+  
+  text-align: end;
+  color: blue;
+  
+}
+.count{
+  font-family: Samim-FD;
+  text-align: end;
+  color: crimson;
+}
+
+.offPrice{
+  color: gray;
+  font-family: Samim-FD;
+}
+
+.offContainer{
+  font-family: Samim-FD;
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+.rfContainer{
+  display: flex;
+  justify-content: space-between;
+  
+
+ 
+
+
+
+
+}
+

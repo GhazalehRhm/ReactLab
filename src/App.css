@@ -1,0 +1,11 @@
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  width:1350px;
+}
+body{
+  padding: 0%;
+  margin: auto;
+}
