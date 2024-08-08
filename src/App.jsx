@@ -14,6 +14,7 @@ function App() {
           count = {false}
           countData = "20"
           off={false}
+          offNum={20}
          
         />
         <ProductCard
@@ -26,7 +27,7 @@ function App() {
           isSpecialSale = {true}
           countData = "3"
           off={true}
-         
+          offNum={13}
         />
         <ProductCard
           title="گوشی موبایل داریا دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت"
@@ -38,6 +39,7 @@ function App() {
           isSpecialSale = {false}
           countData = "1"
           off={true}
+          offNum={15}
          
         />
         <ProductCard
@@ -50,6 +52,7 @@ function App() {
           isSpecialSale = {true}
           countData = "15"
           off={true}
+          offNum={10}
          
         />
         <ProductCard
@@ -62,6 +65,7 @@ function App() {
           isSpecialSale = {false}
           countData = "8"
           off={false}
+          offNum={7}
 
         />
         <ProductCard
@@ -74,6 +78,7 @@ function App() {
           isSpecialSale = {true}
           countData = "6"
           off={true}
+          offNum={9}
         />
       </section>
     </>
