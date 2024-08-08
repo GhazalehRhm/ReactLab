@@ -8,6 +8,17 @@ const ProductCard = (props) => {
     return str.split("").reverse().join("");
   }
 
+  function isOff(props) {
+    const off = props.off;
+    const offCount = props.price - handlerPercentage(props.offNum)
+    return (
+      <>
+        { off ? offCount : "" }
+       
+      </>
+    );
+  }
+
   // event handlers
   function handlerSeparateNumbers(e) {
     let seperatedNumber = funcReverseString("" + e);
@@ -29,8 +40,8 @@ const ProductCard = (props) => {
     return seperatedNumber;
   }
 
-  function handlerPercentage(number) {
-    return (number * 7) / 100;
+  function handlerPercentage(e) {
+    return (!!(props.price)* e) / 100;
   }
 
   return (
@@ -63,8 +74,7 @@ const ProductCard = (props) => {
             {handlerSeparateNumbers(props.price)} تومان{" "}
           </span>
           <br />
-          <strike className="offPrice">
-            {props.price - handlerPercentage(props.price)} تومان{" "}
+          <strike className="offPrice"> {isOff(props)}
           </strike>
         </div>
         {!!props.off && (
@@ -79,7 +89,7 @@ const ProductCard = (props) => {
               color: "white",
             }}
           >
-            7%
+         % {props.offNum} 
           </h4>
         )}
       </div>
